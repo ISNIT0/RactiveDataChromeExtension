@@ -1,6 +1,7 @@
 # RactiveDataChromeExtension
 Show contextual Ractive data in DevTools
 
+Download: [Chrome WebStore](https://chrome.google.com/webstore/detail/ractive-data/nnahmijfpolmcohlcllgndbilgneipec/related)
 
 
 Known issues:
