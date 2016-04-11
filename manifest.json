@@ -1,6 +1,6 @@
 {
   "name": "Ractive Data",
-  "version": "1.1",
+  "version": "1.2",
   "description": "Adds Ractive context data to chrome dev tools.",
   "devtools_page": "devtools.html",
   "manifest_version": 2,

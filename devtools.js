@@ -6,7 +6,15 @@ chrome.devtools.panels.elements.createSidebarPane(
   "Ractive Data",
   function(sidebar) {
     function update() {
-      sidebar.setExpression("$0._ractive.proxy.ractive.get() || $0._ractive.root.get($0._ractive.keypath.str)");
+        var query = "$0._ractive ?\
+            $0._ractive.proxy.ractive?\
+                $0._ractive.proxy.ractive.get()\
+            :\
+                $0._ractive.root.get($0._ractive.keypath.str)\
+        :\
+            'No a Ractive Element';"
+        
+      sidebar.setExpression(query);
     }
 
     update();
