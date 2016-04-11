@@ -6,7 +6,7 @@ chrome.devtools.panels.elements.createSidebarPane(
   "Ractive Data",
   function(sidebar) {
     function update() {
-      sidebar.setExpression("$0._ractive.root.get($0._ractive.keypath.str)");
+      sidebar.setExpression("$0._ractive.proxy.ractive.get() || $0._ractive.root.get($0._ractive.keypath.str)");
     }
 
     update();
